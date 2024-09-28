@@ -1,6 +1,6 @@
 ## Introduction
 
-link-shorten is my personal project for an university assignment. See the requirement --> open Requirements.pf
+link-shorten is my personal project for an university assignment. See the requirement --> open Requirements.pdf
 It's a Spring Boot application developed using Java and Kotlin. It uses Gradle for dependency management.
 
 
