@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Lab10
+  h2:
+    console:
+      path: /my-h2-console
+  datasource:
+    url: jdbc:h2:file:./db/urls;DATABASE_TO_UPPER=false
+    username: appUser
+    password: appPassword
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy:  org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

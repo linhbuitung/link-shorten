@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<body>
+<header th:fragment="myHeader">
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="nav-link active fs-3" style="margin:0  1rem " aria-current="page" th:href="@{/create-menu}" href="#" method="get">Create Short Link</a>
+      <a class="nav-link active fs-3"  aria-current="page" th:href="@{/}" href="#" method="get">Change Language</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+
+
+        <form class="d-flex" role="search" action="#" th:action="@{/link-operation}" method="get" style="width: auto;
+    text-align: right;
+    margin-left: auto;">
+          <input id="urlId" class="form-control me-2" name="urlId" type="search" placeholder="Link Id Here" aria-label="Search" required>
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<footer th:fragment="myFooter" class="">
+  TPO @ PJAIT &copy;2024 - s28786
+</footer>
+</body>
+</html>
+
+
+
+
+

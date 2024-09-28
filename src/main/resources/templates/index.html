@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/stylesheet/styles.css}" href="../static/stylesheet/styles.css">
+
+</head>
+<body>
+<main  layout:fragment="content">
+    <h2 class="top-header">Welcome to the Home page</h2>
+    <form class="form-action" style="border: none" action="#" method="get">
+        <h4>Choose a language</h4>
+        <select name="lang" onchange="this.form.submit()">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="pl">Polish</option>
+        </select>
+    </form>
+
+
+    <form class="d-flex" role="search" action="#" th:action="@{/create-menu}" method="get" style="margin: auto;">
+        <button style="margin: auto;" class="btn btn-outline-info" type="submit">Create a link</button>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
