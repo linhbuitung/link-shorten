@@ -12,6 +12,7 @@ link-shorten is my personal project for an university assignment. It's a Spring 
 ## Running the Application
 
 Run the application: `gradle bootRun`
+See the routes at port 8080
 
 ## Application Details
 
